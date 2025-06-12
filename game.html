@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main id="all">
+        <h1 id="title">Tic-Tac-Toe</h1>
+        <h2 id="turn-title">Player X turn</h2>
+        <div id="ai-status" style="display: none; color: #3f3f3f; font-style: italic; margin: 10px 0;">
+            AI is thinking...
+        </div>
+        <section class="Game">
+            
+            <section class="Board">
+                <div class="Cube" id="1"></div>
+                <div class="Cube" id="2"></div>
+                <div class="Cube" id="3"></div>
+
+                <div class="Cube" id="4"></div>
+                <div class="Cube" id="5"></div>
+                <div class="Cube" id="6"></div>
+
+                <div class="Cube" id="7"></div>
+                <div class="Cube" id="8"></div>
+                <div class="Cube" id="9"></div>
+            </section>
+
+            <section class="score">
+                <div class="score-div-upper">
+                    <h1 id="score-title">Score</h1>
+                </div>
+                <div class="players">
+                    <div class="player-X-score">
+                        <h1 id="player-X-title">X</h1>
+                    </div>
+                    <div class="player-O-score">
+                        <h1 id="player-O-title">O</h1>
+                    </div>
+                </div>
+                <button class="change-button" id="start-again-button">Start Again</button>
+                <button class="change-button" id="change-game-button">Change Game</button>
+                <h1 id="round-count">Round 1</h1>
+            </section>
+        </section>
+    </main>
+
+    <script src="Javascript/game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="Game_AI/GameAI.js"></script>
+</body>
+</html>
